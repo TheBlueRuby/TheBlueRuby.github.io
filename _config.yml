@@ -22,8 +22,8 @@
 title: TheBlueRuby
 description: >- # this means to ignore newlines until "baseurl:"
   TheBlueRuby's Github Pages site
-baseurl: "/blog" # the subpath of your site, e.g. /blog
-url: "https://theblueruby.github.io/home" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "/home" # the subpath of your site, e.g. /blog
+url: "https://theblueruby.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  TheBlueRuby
 
 # Build settings
