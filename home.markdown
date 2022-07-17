@@ -5,3 +5,4 @@ permalink: /home/
 ---
 
 # Homepage for TheBlueRuby's Github Pages Site
+THIS IS A WORK IN PROGRESS
