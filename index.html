@@ -1,13 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta http-equiv="refresh" content="1; url=http://theblueruby.github.io/home/">
-    <title>TheBlueRuby's Github Pages Site</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TheBlueRuby - Main Page</title>
 </head>
 <body>
-    <h1>TheBlueRuby</h1>
-    <p>Redirecting your browser</p>
-    <p>If this doesn't redirect within 5 seconds, you must be using a really old browser</p>
-    <p>This page should redirect to <a href="http://theblueruby.github.io/home/">theblueruby.github.io/home/</a></p>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./accordion.css">
+
+    <h1>TheBlueRuby's Github Page</h1>
+
+    <!--Navbar-->
+
+    <ul class="navbar">
+        <li class="navbar-item"><a class="navbar-link" href="./index.html">Home</a></li>
+        <li class="navbar-item"><a class="navbar-link" href="./art.html">Art</a></li>
+    </ul> 
+
+    <br>
+
+    <!--Accordions-->
+    <div class="acc-box">
+        <div class="acc">
+          <input class="acc-btn" type="checkbox" id="acc1">
+          <label class="acc-label" for="acc1">About Me</label>
+          <div class="acc-content">
+            <p>Hi! I'm TheBlueRuby and I am a noob programmer.</p>
+            <p>I am currently learning Rust, Java and JS.</p>
+            <p>I have made a group with my friends called Mite Productions, and are learning game development</p>
+          </div>
+        </div>
+        <div class="acc">
+            <input class="acc-btn" type="checkbox" id="acc2">
+            <label class="acc-label" for="acc2">Current Projects</label>
+            <div class="acc-content">
+              <p>I am currently working on a Minecraft mod and installer for said mod</p>
+              <p>You can see my progress on my <a href="https://github.com/TheBlueRuby/">github page!</a></p>
+            </div>
+        </div>
+        <div class="acc">
+            <input class="acc-btn" type="checkbox" id="acc3">
+            <label class="acc-label" for="acc3">Socials</label>
+            <div class="acc-content">
+              <a href="http://github.com/TheBlueRuby/">Github</a>
+              <br>
+              <a href="http://namemc.com/DaBlueRuby.1/">Minecraft (NameMC)</a>
+            </div>
+          </div>
+    </div>
+
 </body>
 </html>
