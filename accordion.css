@@ -6,8 +6,11 @@
 }
 
 .acc {
+    margin: auto;
+    padding: 0;
     color: #ffffff;
     margin-bottom: 3rem;
+    max-width: 45rem;
 }
    
 .acc-label {
