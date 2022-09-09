@@ -6,6 +6,7 @@
     --navbar-color: #00b;
     --navbar-hover-color: #0ff;
     --navbar-text-color: #fff;
+    --navbar-hover-text-color: #000;
 }
 
 [data-theme="dark"] {
@@ -63,7 +64,7 @@ body {
   text-decoration: none;
 }
 .navbar-link:hover {
-    color: var(--txt-color);
+    color: var(--navbar-hover-text-color);
     background-color: var(--navbar-hover-color);
 }
 
