@@ -1,6 +1,27 @@
+:root {
+    --bg-color: #fff;
+    --bg-color-highlight: #ccc;
+    --txt-color: #000;
+
+    --navbar-color: #00b;
+    --navbar-hover-color: #0ff;
+    --navbar-text-color: #fff;
+}
+
+[data-theme="dark"] {
+    --bg-color: #123;
+    --bg-color-highlight: #246;
+    --txt-color: #fff;
+
+    --navbar-color: #00b;
+    --navbar-hover-color: #0ff;
+    --navbar-text-color: #fff;
+}
+  
+
 body {
-    color: #000000;
-    background: #ffffff;
+    color: var(--txt-color);
+    background: var(--bg-color);
     padding: 1.2rem;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0 auto;
@@ -14,12 +35,20 @@ body {
     max-width: 45rem;
 }
 
+.darkmode-toggle {
+    margin: auto;
+    padding: 0;
+    max-width: 45rem;
+}
+
+/*Navbar*/
+
 .navbar {
     list-style-type: none;
     margin: auto;
     padding: 0;
     overflow: hidden;
-    background-color: #0000bb;
+    background-color: var(--navbar-color);
     max-width: 45rem;
 }
 .navbar-item {
@@ -28,12 +57,101 @@ body {
 }
 .navbar-link {
   display: block;
-  color: white;
+  color: var(--navbar-text-color);
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
 }
 .navbar-link:hover {
-    color: black;
-    background-color: #00ffff;
+    color: var(--txt-color);
+    background-color: var(--navbar-hover-color);
+}
+
+/*Accordion*/
+
+.acc-btn {
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+}
+
+.acc {
+    margin: auto;
+    padding: 0;
+    color: --bg-color;
+    margin-bottom: 3rem;
+    max-width: 45rem;
+}
+   
+.acc-label {
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1em;
+    background: #00bbff;
+    font-weight: bold;
+    cursor: pointer;
+    user-select: none;
+}
+   
+   
+.acc-label::after {
+    content: '\002B';
+    padding: 0.51rem;
+    transform: scale(1.8);
+    text-align: center;
+    transition: all 0.35s;
+}
+   
+.acc-content {
+    max-height: 0;
+    padding: 0 1em;
+    color: var(--txt-color);
+    background: var(--bg-color);
+    transition: all 0.35s;
+    display: none;
+}
+input:checked + .acc-label {
+    background: #0077bb;
+}
+
+input:checked + .acc-label::after {
+    content: '\2013';
+    transform: scale(1.5);
+}
+input:checked ~ .acc-content {
+    max-height: 100vh;
+    padding: 1em;
+    display: block;
+    transition: all 0.35s;
+}
+
+/*Gallery*/
+div.gallery-container {
+    margin: auto;
+    padding: 1%;
+    overflow: hidden;
+    max-width: 45rem;
+}
+
+div.gallery {
+    margin: 0;
+    padding: 0;
+    float: left;
+    width: 180px;
+}
+  
+div.gallery:hover {
+    background-color: var(--bg-color-highlight);
+}
+  
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+  
+div.desc {
+    padding: 15px;
+    text-align: center;
 }
