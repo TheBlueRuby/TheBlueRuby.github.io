@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TheBlueRuby - Template Page</title>
+</head>
+<body>
+    <link rel="stylesheet" href="./style.css">
+
+    <script src="darkmode.js"></script>
+    <script src="https://unpkg.com/showdown/dist/showdown.min.js"></script>
+    <script src="post-converter.js"></script>
+
+    <h1 class="title">Page Template</h1>
+    <br>
+
+    <!--Dark Mode Button-->
+
+    <div class="darkmode-toggle">
+      <input id="darkmode-toggler" class="darkmode-checkbox" type="checkbox" checked>
+      <label class="darkmode-label" for="darkmode-toggler">
+        Enable dark mode
+      </label>
+    </div>
+    <br>
+
+    <!--Navbar-->
+
+    <ul class="navbar">
+        <li class="navbar-item"><a class="navbar-link" href="./index.html">Home</a></li>
+        <li class="navbar-item"><a class="navbar-link" href="./art.html">Art</a></li>
+        <li class="navbar-item"><a class="navbar-link" href="./posts.html">Posts</a></li>
+    </ul> 
+
+    <br>
+
+    <!--Content goes here!-->
+    <div id="latest-post" class="posts"></div>
+</body>
+</html>
