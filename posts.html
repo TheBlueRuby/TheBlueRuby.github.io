@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="./favicon.png">
     <title>TheBlueRuby - Posts</title>
 
     <meta content="TheBlueRuby's Github Page - Posts" property="og:title" />
@@ -39,6 +40,7 @@
         <li class="navbar-item"><a class="navbar-link" href="./index.html">Home</a></li>
         <li class="navbar-item"><a class="navbar-link" href="./art.html">Art</a></li>
         <li class="navbar-item"><a class="navbar-link" href="./posts.html">Posts</a></li>
+        <li class="navbar-item"><a class="navbar-link" href="./projects.html">Projects</a></li>
     </ul> 
 
     <br>
@@ -47,9 +49,21 @@
     <div id="latest-post" class="posts"></div>
 
     <br>
-    <br>
-    <br>
-    <br>
+    <div class="acc-box">
+      <div class="acc">
+        <input class="acc-btn" type="checkbox" id="acc1">
+        <label class="acc-label" for="acc1">Viewing Older Posts</label>
+        <div class="acc-content">
+          <p>To view older posts, go to <a href="https://github.com/TheBlueRuby/TheBlueRuby.github.io/tree/main/posts">the posts directory of this site's source</a> and add the post id to the end.</p>
+          <p>Post IDs are formatted as YYYY-MM-DD--HH-MM</p>
+          <p>Hours are 24 hour and are in the UTC+11:00 timezone.</p>
+          <p>For example, to view the post made on the 9th of September 2022 at 10:29 UTC you would go to:</p>
+          <p><a href="https://github.com/TheBlueRuby/TheBlueRuby.github.io/tree/main/posts/2022-09-09--21-29.md">https://github.com/TheBlueRuby/TheBlueRuby.github.io/tree/main/posts/2022-09-09--21-29.md</a></p>
+          <p>This will show the formatted markdown of the post.</p>
+          <p>To view the raw markdown, replace the "blob" in the resulting link with "raw"</p>
+        </div>
+      </div>
+    </div>
 
 </body>
 </html>
