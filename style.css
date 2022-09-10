@@ -45,16 +45,15 @@ p {
     max-width: 45rem;
 }
 
-a {
-    color: var(--link-color);
-}
-
-.posts {
+.content {
     margin: auto;
     padding: 0;
+    overflow: hidden;
     max-width: 45rem;
-    border: 1px;
-    border-color: var(--bg-color-highlight);
+}
+
+a {
+    color: var(--link-color);
 }
 
 .darkmode-toggle {
@@ -176,4 +175,26 @@ div.gallery img {
 div.desc {
     padding: 15px;
     text-align: center;
+}
+
+/* Posts */
+
+.posts {
+    margin: auto;
+    padding: 1%;
+    max-width: 43.5rem;
+    border-style: solid;
+    border-width: 1px;
+    border-color: var(--bg-color-highlight);
+}
+
+blockquote {
+    margin: auto;
+    margin-left: 5%;
+    margin-bottom: 3%;
+    padding: 0;
+    max-width: 45rem;
+    border-left-style: solid;
+    border-left-width: 5px;
+    border-color: var(--bg-color-highlight);
 }
