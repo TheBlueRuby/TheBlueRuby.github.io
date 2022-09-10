@@ -20,7 +20,7 @@
     --navbar-hover-color: #0ff;
     --navbar-text-color: #fff;
 }
-  
+
 
 body {
     color: var(--txt-color);
@@ -66,23 +66,27 @@ a {
 
 .navbar {
     list-style-type: none;
+    white-space: nowrap;
     margin: auto;
     padding: 0;
     overflow: hidden;
+    overflow-x: auto;
     background-color: var(--navbar-color);
     max-width: 45rem;
 }
+
 .navbar-item {
     display: inline;
-    float: left;
 }
+
 .navbar-link {
-  display: block;
-  color: var(--navbar-text-color);
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
+    display: inline-block;
+    color: var(--navbar-text-color);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none; 
 }
+
 .navbar-link:hover {
     color: var(--navbar-hover-text-color);
     background-color: var(--navbar-hover-color);
@@ -103,7 +107,7 @@ a {
     margin-bottom: 3rem;
     max-width: 45rem;
 }
-   
+
 .acc-label {
     font-size: 1.5rem;
     display: flex;
@@ -115,8 +119,8 @@ a {
     cursor: pointer;
     user-select: none;
 }
-   
-   
+
+
 .acc-label::after {
     content: '\002B';
     padding: 0.51rem;
@@ -124,7 +128,7 @@ a {
     text-align: center;
     transition: all 0.35s;
 }
-   
+
 .acc-content {
     max-height: 0;
     padding: 0 1em;
@@ -133,15 +137,17 @@ a {
     transition: all 0.35s;
     display: none;
 }
-input:checked + .acc-label {
+
+input:checked+.acc-label {
     background: #0077bb;
 }
 
-input:checked + .acc-label::after {
+input:checked+.acc-label::after {
     content: '\2013';
     transform: scale(1.5);
 }
-input:checked ~ .acc-content {
+
+input:checked~.acc-content {
     max-height: 100vh;
     padding: 1em;
     display: block;
@@ -162,16 +168,16 @@ div.gallery {
     float: left;
     width: 180px;
 }
-  
+
 div.gallery:hover {
     background-color: var(--bg-color-highlight);
 }
-  
+
 div.gallery img {
     width: 100%;
     height: auto;
 }
-  
+
 div.desc {
     padding: 15px;
     text-align: center;
