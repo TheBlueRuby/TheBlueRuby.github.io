@@ -15,6 +15,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
             var converter = new showdown.Converter(),
             html      = converter.makeHtml(mdText);
 
+            console.log(html);
+
             document.getElementById("latest-post").innerHTML = html;
         }
     }
