@@ -114,7 +114,7 @@ a {
     align-items: center;
     justify-content: space-between;
     padding: 1em;
-    background: #00bbff;
+    background: #0bf;
     font-weight: bold;
     cursor: pointer;
     user-select: none;
@@ -139,7 +139,7 @@ a {
 }
 
 input:checked+.acc-label {
-    background: #0077bb;
+    background: #07b;
 }
 
 input:checked+.acc-label::after {
