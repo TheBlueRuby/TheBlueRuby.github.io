@@ -6,7 +6,3 @@ A Favicon has also been added to this site.
 <br>
 <br>
 \- TheBlueRuby Out!
-<br>
-<br>
-<br>
-<br>

@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
             console.log(html);
 
-            document.getElementById("latest-post").innerHTML = html;
+            document.getElementById("latest-post").innerHTML = html + document.getElementById("latest-post").innerHTML;
         }
     }
 
