@@ -3,6 +3,7 @@
     --bg-color-highlight: #ccc;
     --txt-color: #000;
     --link-color: #0b0;
+    --link-color-hover: #090;
 
     --navbar-color: #00b;
     --navbar-hover-color: #0ff;
@@ -17,6 +18,7 @@
     --bg-color-highlight: #246;
     --txt-color: #fff;
     --link-color: #0f0;
+    --link-color-hover: #0c0;
 
     --navbar-color: #00b;
     --navbar-hover-color: #0ff;
@@ -56,6 +58,10 @@ p {
 
 a {
     color: var(--link-color);
+}
+
+a:hover {
+    color: var(--link-color-hover);
 }
 
 .darkmode-toggle {
