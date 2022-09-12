@@ -118,6 +118,7 @@ a {
     font-weight: bold;
     cursor: pointer;
     user-select: none;
+    max-height: 2rem;
 }
 
 
