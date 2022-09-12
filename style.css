@@ -127,7 +127,6 @@ a {
     padding: 0.51rem;
     transform: scale(1.8);
     text-align: center;
-    transition: all 0.35s;
 }
 
 .acc-content {
@@ -135,7 +134,6 @@ a {
     padding: 0 1em;
     color: var(--txt-color);
     background: var(--bg-color);
-    transition: all 0.35s;
     display: none;
 }
 
@@ -152,7 +150,6 @@ input:checked~.acc-content {
     max-height: 100vh;
     padding: 1em;
     display: block;
-    transition: all 0.35s;
 }
 
 /*Gallery*/
