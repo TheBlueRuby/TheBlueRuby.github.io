@@ -8,6 +8,8 @@
     --navbar-hover-color: #0ff;
     --navbar-text-color: #fff;
     --navbar-hover-text-color: #000;
+
+    --max-width: 75rem;
 }
 
 [data-theme="dark"] {
@@ -28,28 +30,28 @@ body {
     padding: 1.2rem;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0 auto;
-    font-size: 1.2rem;
+    font-size: 2rem;
 }
 
 .title {
     margin: auto;
     padding: 0;
     overflow: hidden;
-    max-width: 45rem;
+    max-width: var(--max-width);
 }
 
 p {
     margin: auto;
     padding: 0;
     overflow: hidden;
-    max-width: 45rem;
+    max-width: var(--max-width);
 }
 
 .content {
     margin: auto;
     padding: 0;
     overflow: hidden;
-    max-width: 45rem;
+    max-width: var(--max-width);
 }
 
 a {
@@ -59,7 +61,12 @@ a {
 .darkmode-toggle {
     margin: auto;
     padding: 0;
-    max-width: 45rem;
+    max-width: var(--max-width);
+}
+
+.darkmode-label {
+    display: inline;
+    font-weight: light;
 }
 
 /*Navbar*/
@@ -72,7 +79,8 @@ a {
     overflow: hidden;
     overflow-x: auto;
     background-color: var(--navbar-color);
-    max-width: 45rem;
+    max-width: var(--max-width);
+    max-height: 50px;
 }
 
 .navbar-item {
@@ -83,13 +91,15 @@ a {
     display: inline-block;
     color: var(--navbar-text-color);
     text-align: center;
-    padding: 14px 16px;
+    padding: 10px 16px;
     text-decoration: none; 
+    min-height: 50px;
 }
 
 .navbar-link:hover {
     color: var(--navbar-hover-text-color);
     background-color: var(--navbar-hover-color);
+    text-decoration: none;
 }
 
 /*Accordion*/
@@ -105,20 +115,22 @@ a {
     padding: 0;
     color: --bg-color;
     margin-bottom: 3rem;
-    max-width: 45rem;
+    max-width: var(--max-width);
 }
 
 .acc-label {
-    font-size: 1.5rem;
+    font-size: 2rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 1em;
     background: #0bf;
-    font-weight: bold;
+    font-weight: normal;
     cursor: pointer;
     user-select: none;
-    max-height: 2rem;
+    max-height: 6rem;
+    text-decoration: none;
+    border-radius: 4px;
 }
 
 
@@ -157,7 +169,7 @@ div.gallery-container {
     margin: auto;
     padding: 1%;
     overflow: hidden;
-    max-width: 45rem;
+    max-width: var(--max-width);
 }
 
 div.gallery {
@@ -185,11 +197,12 @@ div.desc {
 
 .posts {
     margin: auto;
-    padding: 1%;
-    max-width: 43.5rem;
+    padding: 1.5%;
+    max-width: 75rem;
     border-style: solid;
     border-width: 1px;
     border-color: var(--bg-color-highlight);
+    border-radius: 4px; 
 }
 
 blockquote {
@@ -197,7 +210,7 @@ blockquote {
     margin-left: 5%;
     margin-bottom: 3%;
     padding: 0;
-    max-width: 45rem;
+    max-width: var(--max-width);
     border-left-style: solid;
     border-left-width: 5px;
     border-color: var(--bg-color-highlight);

@@ -1,80 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" href="resources/favicon.png">
-    <title>TheBlueRuby - Art</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="resources/favicon.png">
+  <title>TheBlueRuby - Art</title>
 
-    <meta content="TheBlueRuby's Github Page - Art" property="og:title" />
-    <meta property="og:type" content="website">
-    <meta content="A small website by TheBlueRuby" property="og:description" />
-    <meta content="https://theblueruby.github.io/" property="og:url" />
-    <meta content="https://theblueruby.github.io/resources/banner.png" property="og:image" />
-    <meta content="#00BBFF" name="theme-color"/>
+  <meta content="TheBlueRuby's Github Page - Art" property="og:title" />
+  <meta property="og:type" content="website">
+  <meta content="A small website by TheBlueRuby" property="og:description" />
+  <meta content="https://theblueruby.github.io/" property="og:url" />
+  <meta content="https://theblueruby.github.io/resources/banner.png" property="og:image" />
+  <meta content="#00BBFF" name="theme-color" />
 </head>
+
 <body>
-    <link rel="stylesheet" href="./style.css">
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  
+  <link rel="stylesheet" href="./style.css">
 
-    <script src="darkmode.js"></script>
+  <script src="darkmode.js"></script>
 
-    <h1 class="title">TheBlueRuby's Art</h1>
-    <br>
+  <h1 class="title">TheBlueRuby's Art</h1>
+  <br>
 
-    <!--Dark Mode Button-->
+  <!--Dark Mode Button-->
 
-    <div class="darkmode-toggle">
-      <input id="darkmode-toggler" class="darkmode-checkbox" type="checkbox" checked>
-      <label class="darkmode-label" for="darkmode-toggler">
-        Enable dark mode
-      </label>
+  <div class="darkmode-toggle">
+    <input id="darkmode-toggler" class="darkmode-checkbox" type="checkbox" checked>
+    <label class="darkmode-label" for="darkmode-toggler">
+      Enable dark mode
+    </label>
+  </div>
+  <br>
+
+  <!--Navbar-->
+
+  <ul class="navbar">
+    <li class="navbar-item"><a class="navbar-link" href="./index.html">Home</a></li>
+    <li class="navbar-item"><a class="navbar-link" href="./art.html">Art</a></li>
+    <li class="navbar-item"><a class="navbar-link" href="./posts.html">Posts</a></li>
+    <li class="navbar-item"><a class="navbar-link" href="./projects.html">Projects</a></li>
+    <li class="navbar-item"><a class="navbar-link"
+        href="https://github.com/TheBlueRuby/theblueruby.github.io/">Source</a></li>
+  </ul>
+
+  <br>
+
+  <!--Image gallery-->
+
+  <div class="gallery-container">
+    <div class="gallery">
+      <a target="_blank" href="art/iconv2.png">
+        <img src="art/iconv2.png" alt="My Icon" width="500" height="500">
+      </a>
+      <div class="desc">3D render of my icon</div>
     </div>
-    <br>
 
-    <!--Navbar-->
-
-    <ul class="navbar">
-        <li class="navbar-item"><a class="navbar-link" href="./index.html">Home</a></li>
-        <li class="navbar-item"><a class="navbar-link" href="./art.html">Art</a></li>
-        <li class="navbar-item"><a class="navbar-link" href="./posts.html">Posts</a></li>
-        <li class="navbar-item"><a class="navbar-link" href="./projects.html">Projects</a></li>
-        <li class="navbar-item"><a class="navbar-link" href="https://github.com/TheBlueRuby/theblueruby.github.io/">Source</a></li>
-    </ul> 
-
-    <br>
-
-    <!--Image gallery-->
-
-    <div class="gallery-container">
-      <div class="gallery">
-        <a target="_blank" href="art/iconv2.png">
-          <img src="art/iconv2.png" alt="My Icon" width="500" height="500">
-        </a>
-        <div class="desc">3D render of my icon</div>
-      </div>
-
-      <div class="gallery">
-        <a target="_blank" href="art/miteprodlogo.png">
-          <img src="art/miteprodlogo.png" alt="Logo for Mite Productions" width="500" height="500">
-        </a>
-        <div class="desc">A logo I made for Mite Productions</div>
-      </div>
-      
-      <div class="gallery">
-          <a target="_blank" href="art/ultramite-blue8.png">
-            <img src="art/ultramite-blue8.png" alt="Ultramite Early Render" width="500" height="500">
-          </a>
-        <div class="desc">Early render of my character Ultramite</div>
-      </div>
-
-      <div class="gallery">
-        <a target="_blank" href="art/UltramiteBlink.gif">
-          <img src="art/UltramiteBlink.gif" alt="Ultramite Blinking Disapprovingly" width="500" height="500">
-        </a>
-        <div class="desc">Ultramite blinking disapprovingly (reaction gif)</div>
-      </div>
+    <div class="gallery">
+      <a target="_blank" href="art/miteprodlogo.png">
+        <img src="art/miteprodlogo.png" alt="Logo for Mite Productions" width="500" height="500">
+      </a>
+      <div class="desc">A logo I made for Mite Productions</div>
     </div>
-     
+
+    <div class="gallery">
+      <a target="_blank" href="art/ultramite-blue8.png">
+        <img src="art/ultramite-blue8.png" alt="Ultramite Early Render" width="500" height="500">
+      </a>
+      <div class="desc">Early render of my character Ultramite</div>
+    </div>
+
+    <div class="gallery">
+      <a target="_blank" href="art/UltramiteBlink.gif">
+        <img src="art/UltramiteBlink.gif" alt="Ultramite Blinking Disapprovingly" width="500" height="500">
+      </a>
+      <div class="desc">Ultramite blinking disapprovingly (reaction gif)</div>
+    </div>
+  </div>
+
 </body>
+
 </html>

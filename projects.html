@@ -1,85 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" href="resources/favicon.png">
-    
-    <title>TheBlueRuby - Projects</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="resources/favicon.png">
 
-    <meta content="TheBlueRuby's Github Page - Projects" property="og:title" />
-    <meta property="og:type" content="website">
-    <meta content="A small website by TheBlueRuby" property="og:description" />
-    <meta content="https://theblueruby.github.io/" property="og:url" />
-    <meta content="https://theblueruby.github.io/resources/banner.png" property="og:image" />
-    <meta content="#00BBFF" name="theme-color"/>
+  <title>TheBlueRuby - Projects</title>
+
+  <meta content="TheBlueRuby's Github Page - Projects" property="og:title" />
+  <meta property="og:type" content="website">
+  <meta content="A small website by TheBlueRuby" property="og:description" />
+  <meta content="https://theblueruby.github.io/" property="og:url" />
+  <meta content="https://theblueruby.github.io/resources/banner.png" property="og:image" />
+  <meta content="#00BBFF" name="theme-color" />
 </head>
+
 <body>
-    <link rel="stylesheet" href="./style.css">
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  
+  <link rel="stylesheet" href="./style.css">
 
-    <script src="darkmode.js"></script>
+  <script src="darkmode.js"></script>
 
-    <h1 class="title">My Projects</h1>
-    <br>
+  <h1 class="title">My Projects</h1>
+  <br>
 
-    <!--Dark Mode Button-->
+  <!--Dark Mode Button-->
 
-    <div class="darkmode-toggle">
-      <input id="darkmode-toggler" class="darkmode-checkbox" type="checkbox" checked>
-      <label class="darkmode-label" for="darkmode-toggler">
-        Enable dark mode
-      </label>
-    </div>
-    <br>
+  <div class="darkmode-toggle">
+    <input id="darkmode-toggler" class="darkmode-checkbox" type="checkbox" checked>
+    <label class="darkmode-label" for="darkmode-toggler">
+      Enable dark mode
+    </label>
+  </div>
+  <br>
 
-    <!--Navbar-->
+  <!--Navbar-->
 
-    <ul class="navbar">
-        <li class="navbar-item"><a class="navbar-link" href="./index.html">Home</a></li>
-        <li class="navbar-item"><a class="navbar-link" href="./art.html">Art</a></li>
-        <li class="navbar-item"><a class="navbar-link" href="./posts.html">Posts</a></li>
-        <li class="navbar-item"><a class="navbar-link" href="./projects.html">Projects</a></li>
-        <li class="navbar-item"><a class="navbar-link" href="https://github.com/TheBlueRuby/theblueruby.github.io/">Source</a></li>
-    </ul> 
+  <ul class="navbar">
+    <li class="navbar-item"><a class="navbar-link" href="./index.html">Home</a></li>
+    <li class="navbar-item"><a class="navbar-link" href="./art.html">Art</a></li>
+    <li class="navbar-item"><a class="navbar-link" href="./posts.html">Posts</a></li>
+    <li class="navbar-item"><a class="navbar-link" href="./projects.html">Projects</a></li>
+    <li class="navbar-item"><a class="navbar-link"
+        href="https://github.com/TheBlueRuby/theblueruby.github.io/">Source</a></li>
+  </ul>
 
-    <br>
+  <br>
 
-    <!--Content goes here!-->
-    <div class="content">
-      <h2>Projects</h2>
+  <!--Content goes here!-->
+  <div class="content">
+    <h2>Projects</h2>
 
-      <div class="acc-box">
-        <div class="acc">
-          <input class="acc-btn" type="checkbox" id="acc1">
-          <label class="acc-label" for="acc1">Completed Projects</label>
-          <div class="acc-content">
-            <ul>
-              <li><a href="http://github.com/TheBlueRuby/Backrooms-First-Contact/">Backrooms: First Contact</a></li>
-            </ul>
-          </div>
+    <div class="acc-box">
+      <div class="acc">
+        <input class="acc-btn" type="checkbox" id="acc1">
+        <label class="acc-label" for="acc1">Completed Projects</label>
+        <div class="acc-content">
+          <ul>
+            <li><a href="http://github.com/TheBlueRuby/Backrooms-First-Contact/">Backrooms: First Contact</a></li>
+          </ul>
         </div>
+      </div>
 
-        <div class="acc">
-          <input class="acc-btn" type="checkbox" id="acc2">
-          <label class="acc-label" for="acc2">Current Projects</label>
-          <div class="acc-content">
-            <ul>
-              <li><a href="http://github.com/TheBlueRuby/theblueruby.github.io/">This Website</a></li>
-              <li><a href="http://github.com/TheBlueRuby/MiteClient/">Mite Client for Minecraft</a></li>
-            </ul>
-          </div>
+      <div class="acc">
+        <input class="acc-btn" type="checkbox" id="acc2">
+        <label class="acc-label" for="acc2">Current Projects</label>
+        <div class="acc-content">
+          <ul>
+            <li><a href="http://github.com/TheBlueRuby/theblueruby.github.io/">This Website</a></li>
+            <li><a href="http://github.com/TheBlueRuby/MiteClient/">Mite Client for Minecraft</a></li>
+          </ul>
         </div>
+      </div>
 
-        <div class="acc">
-          <input class="acc-btn" type="checkbox" id="acc3">
-          <label class="acc-label" for="acc3">Possible Future Projects</label>
-          <div class="acc-content">
-            <ul>
-              <li>Chat App</li>
-              <li>Game with Ultramite</li>
-            </ul>
-          </div>
-    </div>
+      <div class="acc">
+        <input class="acc-btn" type="checkbox" id="acc3">
+        <label class="acc-label" for="acc3">Possible Future Projects</label>
+        <div class="acc-content">
+          <ul>
+            <li>Chat App</li>
+            <li>Game with Ultramite</li>
+          </ul>
+        </div>
+      </div>
 </body>
+
 </html>
