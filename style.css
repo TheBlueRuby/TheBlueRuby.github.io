@@ -10,7 +10,7 @@
     --navbar-text-color: #fff;
     --navbar-hover-text-color: #000;
 
-    --max-width: 75rem;
+    --max-width: 50rem;
 }
 
 [data-theme="dark"] {
@@ -32,7 +32,7 @@ body {
     padding: 1.2rem;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0 auto;
-    font-size: 2rem;
+    font-size: 1.2rem;
     margin: auto;
     padding: 0;
     max-width: var(--max-width);
@@ -41,6 +41,7 @@ body {
 .title {
     margin: auto;
     padding: 0;
+    padding-top: 1rem;
     overflow: hidden;
     max-width: var(--max-width);
 }
@@ -69,13 +70,14 @@ a:hover {
 
 .darkmode-toggle {
     margin: auto;
-    padding: 0;
+    padding: 10;
     max-width: var(--max-width);
 }
 
 .darkmode-label {
     display: inline;
-    font-weight: light;
+    font-weight: normal;
+    max-width: var(--max-width);
 }
 
 /*Navbar*/
@@ -90,10 +92,12 @@ a:hover {
     background-color: var(--navbar-color);
     max-width: var(--max-width);
     max-height: 50px;
+    justify-content: left;
 }
 
 .navbar-item {
     display: inline;
+    
 }
 
 .navbar-link {
@@ -124,12 +128,12 @@ a:hover {
     margin: auto;
     padding: 0;
     color: --bg-color;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
     max-width: var(--max-width);
 }
 
 .acc-label {
-    font-size: 2rem;
+    font-size: 1.2rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -138,7 +142,7 @@ a:hover {
     font-weight: normal;
     cursor: pointer;
     user-select: none;
-    max-height: 6rem;
+    max-height: 4rem;
     text-decoration: none;
     border-radius: 4px;
 }
@@ -147,6 +151,7 @@ a:hover {
 .acc-label::after {
     content: '\23F7';
     padding: 0.51rem;
+    padding-bottom: 0.5em;
     transform: scale(1.8);
     text-align: center;
 }
@@ -178,14 +183,15 @@ input:checked~.acc-content {
 div.gallery-container {
     margin: auto;
     padding: 1%;
-    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: scroll;
     max-width: var(--max-width);
 }
 
 div.gallery {
+    display: inline-block;
     margin: 0;
     padding: 0;
-    float: left;
     width: 180px;
 }
 
