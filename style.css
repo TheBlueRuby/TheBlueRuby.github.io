@@ -33,6 +33,10 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0 auto;
     font-size: 2rem;
+    margin: auto;
+    padding: 0;
+    overflow: hidden;
+    max-width: var(--max-width);
 }
 
 .title {
