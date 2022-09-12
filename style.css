@@ -25,12 +25,18 @@
     --navbar-text-color: #fff;
 }
 
+@media screen and (max-width: 900px) {
+    :root {
+        --max-width: 90vw;
+    }
+}
+
 
 body {
     color: var(--txt-color);
     background: var(--bg-color);
     padding: 1.2rem;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: var(--bs-font-sans-serif);
     margin: 0 auto;
     font-size: 1.2rem;
     margin: auto;
