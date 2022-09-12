@@ -35,7 +35,6 @@ body {
     font-size: 2rem;
     margin: auto;
     padding: 0;
-    overflow: hidden;
     max-width: var(--max-width);
 }
 
