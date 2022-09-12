@@ -103,13 +103,14 @@ a:hover {
     text-align: center;
     padding: 10px 16px;
     text-decoration: none; 
-    min-height: 50px;
+    min-height: 45px;
 }
 
 .navbar-link:hover {
     color: var(--navbar-hover-text-color);
     background-color: var(--navbar-hover-color);
     text-decoration: none;
+    border-radius: 10px;
 }
 
 /*Accordion*/
@@ -145,7 +146,7 @@ a:hover {
 
 
 .acc-label::after {
-    content: '\002B';
+    content: '\23F7';
     padding: 0.51rem;
     transform: scale(1.8);
     text-align: center;
@@ -164,7 +165,7 @@ input:checked+.acc-label {
 }
 
 input:checked+.acc-label::after {
-    content: '\2013';
+    content: '\23F6';
     transform: scale(1.5);
 }
 
