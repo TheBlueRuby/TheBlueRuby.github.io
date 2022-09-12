@@ -155,7 +155,7 @@ a:hover {
 
 
 .acc-label::after {
-    content: '\23F7';
+    content: '\25BC';
     padding: 0.51rem;
     padding-bottom: 0.5em;
     transform: scale(1.8);
@@ -175,7 +175,7 @@ input:checked+.acc-label {
 }
 
 input:checked+.acc-label::after {
-    content: '\23F6';
+    content: '\25B2';
     transform: scale(1.5);
 }
 
