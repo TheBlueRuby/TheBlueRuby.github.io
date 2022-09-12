@@ -1,78 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" href="resources/favicon.png">
-    <title>TheBlueRuby - Main Page</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="resources/favicon.png">
+  <title>TheBlueRuby - Main Page</title>
 
-    <meta content="TheBlueRuby's Github Page - Main" property="og:title" />
-    <meta property="og:type" content="website">
-    <meta content="A small website by TheBlueRuby" property="og:description" />
-    <meta content="https://theblueruby.github.io/" property="og:url" />
-    <meta content="https://theblueruby.github.io/resources/banner.png" property="og:image" />
-    <meta content="#00BBFF" name="theme-color"/>
+  <meta content="TheBlueRuby's Github Page - Main" property="og:title" />
+  <meta property="og:type" content="website">
+  <meta content="A small website by TheBlueRuby" property="og:description" />
+  <meta content="https://theblueruby.github.io/" property="og:url" />
+  <meta content="https://theblueruby.github.io/resources/banner.png" property="og:image" />
+  <meta content="#00BBFF" name="theme-color" />
 </head>
+
 <body>
-    <link rel="stylesheet" href="./style.css">
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 
-    <script src="darkmode.js"></script>
+  <link rel="stylesheet" href="./style.css">
 
-    <h1 class="title">TheBlueRuby's Github Page</h1>
-    <br>
+  <script src="darkmode.js"></script>
 
-    <!--Dark Mode Button-->
+  <h1 class="title">TheBlueRuby's Github Page</h1>
+  <br>
 
-    <div class="darkmode-toggle">
-      <input id="darkmode-toggler" class="darkmode-checkbox" type="checkbox" checked>
-      <label class="darkmode-label" for="darkmode-toggler">
-        Enable dark mode
-      </label>
+  <!--Dark Mode Button-->
+
+  <div class="darkmode-toggle">
+    <input id="darkmode-toggler" class="darkmode-checkbox" type="checkbox" checked>
+    <div class="darkmode-label" for="darkmode-toggler">
+      Enable dark mode
     </div>
-    <br>
+  </div>
+  <br>
 
-    <!--Navbar-->
+  <!--Navbar-->
+  <ul class="navbar">
+    <li class="navbar-item"><a class="navbar-link" href="./index.html">Home</a></li>
+    <li class="navbar-item"><a class="navbar-link" href="./art.html">Art</a></li>
+    <li class="navbar-item"><a class="navbar-link" href="./posts.html">Posts</a></li>
+    <li class="navbar-item"><a class="navbar-link" href="./projects.html">Projects</a></li>
+    <li class="navbar-item"><a class="navbar-link"
+        href="https://github.com/TheBlueRuby/theblueruby.github.io/">Source</a></li>
+  </ul>
 
-    <ul class="navbar">
-        <li class="navbar-item"><a class="navbar-link" href="./index.html">Home</a></li>
-        <li class="navbar-item"><a class="navbar-link" href="./art.html">Art</a></li>
-        <li class="navbar-item"><a class="navbar-link" href="./posts.html">Posts</a></li>
-        <li class="navbar-item"><a class="navbar-link" href="./projects.html">Projects</a></li>
-        <li class="navbar-item"><a class="navbar-link" href="https://github.com/TheBlueRuby/theblueruby.github.io/">Source</a></li>
-    </ul> 
+  <br>
 
-    <br>
-
-    <!--Accordions-->
-    <div class="acc-box">
-        <div class="acc">
-          <input class="acc-btn" type="checkbox" id="acc1">
-          <label class="acc-label" for="acc1">About Me</label>
-          <div class="acc-content">
-            <p>Hi! I'm TheBlueRuby and I am a noob programmer.</p>
-            <p>I am currently learning Rust, Java and JS.</p>
-            <p>I have made a group with my friends called Mite Productions, and we are learning game development</p>
-          </div>
-        </div>
-        <div class="acc">
-            <input class="acc-btn" type="checkbox" id="acc2">
-            <label class="acc-label" for="acc2">Current Projects</label>
-            <div class="acc-content">
-              <p>I am currently working on a Minecraft mod and installer for said mod</p>
-              <p>You can see my progress on my <a href="https://github.com/TheBlueRuby/">github page!</a></p>
-            </div>
-        </div>
-        <div class="acc">
-            <input class="acc-btn" type="checkbox" id="acc3">
-            <label class="acc-label" for="acc3">Socials</label>
-            <div class="acc-content">
-              <a href="http://github.com/TheBlueRuby/">Github</a>
-              <br>
-              <a href="http://namemc.com/DaBlueRuby.1/">Minecraft (NameMC)</a>
-            </div>
-          </div>
+  <!--Accordions-->
+  <div class="acc-box">
+    <div class="acc">
+      <input class="acc-btn" type="checkbox" id="acc1">
+      <label class="acc-label" for="acc1">About Me</label>
+      <div class="acc-content">
+        <p>Hi! I'm TheBlueRuby!</p>
+        <p>I am currently learning Rust, Java and JS.</p>
+        <p>I have made a group with my friends called Mite Productions, and we are learning game development</p>
+      </div>
     </div>
+    <div class="acc">
+      <input class="acc-btn" type="checkbox" id="acc2">
+      <label class="acc-label" for="acc2">Current Projects</label>
+      <div class="acc-content">
+        <p>I am currently working on a Minecraft mod and installer for said mod</p>
+        <p>You can see my progress on my <a href="https://github.com/TheBlueRuby/">github page!</a></p>
+        <p>For more, see the projects page <a href="http://theblueruby.github.io/projects.html">here</a></p>
+      </div>
+    </div>
+    <div class="acc">
+      <input class="acc-btn" type="checkbox" id="acc3">
+      <label class="acc-label" for="acc3">Socials</label>
+      <div class="acc-content">
+        <a href="http://github.com/TheBlueRuby/">Github</a>
+        <br>
+        <a href="http://namemc.com/DaBlueRuby.1/">Minecraft (NameMC)</a>
+      </div>
+    </div>
+  </div>
 
 </body>
+
 </html>
