@@ -123,67 +123,7 @@ a:hover {
     border-radius: 10px;
 }
 
-/*Accordion*/
-
-.acc-btn {
-    position: absolute;
-    opacity: 0;
-    z-index: -1;
-}
-
-.acc {
-    margin: auto;
-    padding: 0;
-    color: --bg-color;
-    margin-bottom: 2rem;
-    max-width: var(--max-width);
-}
-
-.acc-label {
-    font-size: 1.2rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 1em;
-    background: #0bf;
-    font-weight: normal;
-    cursor: pointer;
-    max-height: 4rem;
-    text-decoration: none;
-    border-radius: 4px;
-}
-
-
-.acc-label::after {
-    content: '\25BC';
-    padding: 0.51rem;
-    padding-bottom: 0.5em;
-    transform: scale(1.8);
-    text-align: center;
-}
-
-.acc-content {
-    max-height: 0;
-    padding: 0 1em;
-    color: var(--txt-color);
-    background: var(--bg-color);
-    display: none;
-}
-
-input:checked+.acc-label {
-    background: #07b;
-}
-
-input:checked+.acc-label::after {
-    content: '\25B2';
-    transform: scale(1.5);
-}
-
-input:checked~.acc-content {
-    max-height: 100vh;
-    padding: 1em;
-    display: block;
-}
+/*Accordion CSS has been moved to accordion.css */
 
 /*Gallery*/
 div.gallery-container {
