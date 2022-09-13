@@ -45,11 +45,13 @@ body {
 }
 
 .title {
+    font-size: 2.5em;
     margin: auto;
     padding: 0;
     padding-top: 1rem;
     overflow: hidden;
     max-width: var(--max-width);
+    min-height: 80px;
 }
 
 p {
@@ -87,6 +89,19 @@ a:hover {
 }
 
 /*Navbar*/
+
+.navbar {
+    white-space: nowrap;
+    margin: auto;
+    padding: 0;
+    overflow: hidden;
+    overflow-x: scroll;
+    background-color: var(--navbar-color);
+    max-width: var(--max-width);
+    max-height: 50px;
+    justify-content: left;
+    border-radius: 4px;
+}
 
 .custom-navbar {
     list-style-type: none;
