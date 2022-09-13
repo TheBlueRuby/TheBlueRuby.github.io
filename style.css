@@ -88,17 +88,18 @@ a:hover {
 
 /*Navbar*/
 
-.navbar {
+.custom-navbar {
     list-style-type: none;
     white-space: nowrap;
     margin: auto;
     padding: 0;
     overflow: hidden;
-    overflow-x: auto;
+    overflow-x: scroll;
     background-color: var(--navbar-color);
     max-width: var(--max-width);
     max-height: 50px;
     justify-content: left;
+    border-radius: 4px;
 }
 
 .navbar-item {
@@ -147,7 +148,6 @@ a:hover {
     background: #0bf;
     font-weight: normal;
     cursor: pointer;
-    user-select: none;
     max-height: 4rem;
     text-decoration: none;
     border-radius: 4px;
