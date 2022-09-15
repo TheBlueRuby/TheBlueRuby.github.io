@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="resources/favicon.png">
+
+    <title>TheBlueRuby - About Me</title>
+
+    <meta content="TheBlueRuby's Github Page - About Me" property="og:title" />
+    <meta property="og:type" content="website">
+    <meta content="A small website by TheBlueRuby" property="og:description" />
+    <meta content="https://theblueruby.github.io/" property="og:url" />
+    <meta content="https://theblueruby.github.io/resources/banner.png" property="og:image" />
+    <meta content="#00BBFF" name="theme-color" />
+</head>
+
+<body>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/accordion.css">
+
+    <script src="themeswitcher.js"></script>
+
+    <h1 class="title">About Me</h1>
+    <br>
+
+    <!--Dark Mode Button-->
+
+    <div class="darkmode-toggle form-check form-switch">
+        <input id="darkmode-toggler" class="darkmode-checkbox form-check-input" role="switch" type="checkbox" checked>
+        <div class="darkmode-label" for="darkmode-toggler">
+            Enable dark mode
+        </div>
+    </div>
+    <br>
+
+    <!--Navbar-->
+    <nav class="navbar navbar-expand">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="resources/favicon.png" width="45" height="45">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="navbar-link" href="./index.html">Home</a></li>
+                    <li class="nav-item"><a class="navbar-link" href="./art.html">Art</a></li>
+                    <li class="nav-item"><a class="navbar-link" href="./posts.html">Posts</a></li>
+                    <li class="nav-item"><a class="navbar-link" href="./projects.html">Projects</a></li>
+                    <li class="nav-item"><a class="navbar-link" href="./aboutme.html">About Me</a></li>
+                    <li class="nav-item"><a class="navbar-link"
+                            href="https://github.com/TheBlueRuby/theblueruby.github.io/">Source</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <br>
+
+    <!--Content goes here!-->
+    <p>Hi! I'm TheBlueRuby!</p>
+    <p>I am currently learning Rust, Java and JS.</p>
+    <p>I have made a group with my friends called Mite Productions, and we are learning game development.</p>
+    <p>I play Minecraft & Doom, and enjoy modding them both</p>
+    <br>
+
+
+    <div class="accordion" id="aboutme-page-accordions">
+        <div class="accordion-item">
+            <h1 class="accordion-header" id="accordion-heading-1">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#accordion-content-1" aria-expanded="false">
+                    Software I Use
+                </button>
+            </h1>
+            <div id="accordion-content-1" class="accordion-collapse collapse" aria-labelledby="accordion-heading-1"
+                data-bs-parent="#aboutme-page-accordion">
+                <div class="accordion-body">
+                    <ul>
+                        <li>Blender (3D Work & Animation, Video Editing)</li>
+                        <li>GIMP (2D Drawings)</li>
+                        <li>OpenToonz (2D Animation)</li>
+                        <br>
+                        <li>Windows 10.5 (Windows 11 with Windows 10 theme)</li>
+                        <li>Ubuntu Jammy Jellyfish (WSL)</li>
+                        <br>
+                        <li>VSCode (Programming Software)</li>
+                        <li>IntelliJ Community (Java IDE)</li>
+                        <br>
+                        <li>Rust (Main language)</li>
+                        <li>Java JDK18 (Portable Language)</li>
+                        <li>JS (WebDev)</li>
+                        <br>
+                        <li>GZDoom (Doom Client)</li>
+                        <li>Slade3 (WAD Manager)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+
+</body>
+
+</html>
