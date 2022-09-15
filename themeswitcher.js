@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
         changeTheme(localStorageTheme);
     } else {
         themeSwitcher.checked = true;
-        changeTheme(localStorageTheme);
+        changeTheme('dark');
     }
 
     themeSwitcher.onchange = function () {
