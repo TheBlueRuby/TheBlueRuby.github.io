@@ -38,9 +38,6 @@ html {
     :root {
         --max-width: 90vw;
     }
-    .navbar {
-        overflow-x: scroll;   
-    }
 }
 
 
@@ -107,6 +104,7 @@ a:hover {
     margin: auto;
     padding: 0;
     overflow: hidden;
+    overflow-x: scroll;
     background-color: var(--navbar-color);
     max-width: var(--max-width);
     max-height: 50px;
