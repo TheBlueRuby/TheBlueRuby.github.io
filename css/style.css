@@ -94,8 +94,6 @@ a:hover {
 }
 
 .darkmode-toggle {
-    margin: auto;
-    padding: 10;
     max-width: var(--max-width);
 }
 
@@ -103,6 +101,11 @@ a:hover {
     display: inline;
     font-weight: normal;
     max-width: var(--max-width);
+    cursor: default;
+}
+
+.darkmode-checkbox {
+    cursor: pointer;
 }
 
 /*Navbar*/
