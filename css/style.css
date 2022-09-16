@@ -13,6 +13,14 @@
     --max-width: 50rem;
 }
 
+[data-theme="light"] {
+    --bg-color: #fff;
+    --bg-color-highlight: #ccc;
+    --txt-color: #000;
+    --link-color: #0b0;
+    --link-color-hover: #090;
+}
+
 [data-theme="dark"] {
     --bg-color: #123;
     --bg-color-highlight: #246;
@@ -37,9 +45,6 @@ html {
 @media screen and (max-width: 900px) {
     :root {
         --max-width: 90vw;
-    }
-    .navbar {
-        overflow-x: scroll;   
     }
 }
 
@@ -112,6 +117,13 @@ a:hover {
     max-height: 50px;
     justify-content: left;
     border-radius: 4px;
+    
+}
+
+@media screen and (max-width: 900px) {
+    .navbar {
+        overflow-x: scroll;   
+    }
 }
 
 .custom-navbar {

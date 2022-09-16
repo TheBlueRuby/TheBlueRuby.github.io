@@ -2,7 +2,7 @@
 
 .accordion {
     --bs-accordion-bg: none;
-    --bs-accordion-color: #fff;
+    --bs-accordion-color: var(--txt-color);
 
     --bs-accordion-btn-bg: #0bf;
     --bs-accordion-btn-color: #fff;
