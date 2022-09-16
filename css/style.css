@@ -1,5 +1,6 @@
 :root {
     --bg-color: #fff;
+    --bg-color-posts: var(--bg-color);
     --bg-color-highlight: #ccc;
     --txt-color: #000;
     --link-color: #0b0;
@@ -15,6 +16,7 @@
 
 [data-theme="light"] {
     --bg-color: #fff;
+    --bg-color-posts: var(--bg-color);
     --bg-color-highlight: #ccc;
     --txt-color: #000;
     --link-color: #0b0;
@@ -23,6 +25,7 @@
 
 [data-theme="dark"] {
     --bg-color: #123;
+    --bg-color-posts: var(--bg-color);
     --bg-color-highlight: #246;
     --txt-color: #fff;
     --link-color: #0f0;
@@ -31,6 +34,7 @@
 
 [data-theme="mite"] {
     --bg-color: linear-gradient(to bottom, #00b, #0060cc);
+    --bg-color-posts: rgba(0, 0, 0, 0.25);
     --bg-color-highlight: #05b;
     --txt-color: #fff;
     --link-color: #0f0;
@@ -202,19 +206,33 @@ div.desc {
     margin: auto;
     padding: 1.5%;
     max-width: 75rem;
+
     border-style: solid;
     border-width: 1px;
     border-color: var(--bg-color-highlight);
     border-radius: 4px;
+
+    background-color: var(--bg-color-posts);
 }
 
 blockquote {
     margin: auto;
     margin-left: 5%;
     margin-bottom: 3%;
-    padding: 0;
+
+    padding: 2.5px;
     max-width: var(--max-width);
+
     border-left-style: solid;
     border-left-width: 5px;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+
     border-color: var(--bg-color-highlight);
+}
+
+/* Other */
+
+.social-namemc {
+    margin-bottom: 5px;
 }
