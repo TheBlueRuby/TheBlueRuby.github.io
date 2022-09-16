@@ -6,12 +6,14 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
     var localStorageTheme = localStorage.getItem("theme");
 
-    if (localStorageTheme == "light") {
-        themeSwitcher.checked = false;
-        changeTheme(localStorageTheme);
-    } else if (localStorageTheme == "mite") {
-        themeSwitcher.checked = true;
-        changeTheme(localStorageTheme);
+    if (localStorageTheme) {
+        if (localStorageTheme == "light") {
+            themeSwitcher.checked = false;
+            changeTheme(localStorageTheme);
+        } else {
+            themeSwitcher.checked = true;
+            changeTheme(localStorageTheme);
+        }
     } else {
         themeSwitcher.checked = true;
         changeTheme('dark');
