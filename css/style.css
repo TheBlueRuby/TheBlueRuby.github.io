@@ -175,7 +175,7 @@ div.gallery-container {
     margin: auto;
     padding: 1%;
     overflow-x: hidden;
-    overflow-y: scroll;
+    overflow-y: auto;
     max-width: var(--max-width);
 }
 
@@ -191,8 +191,10 @@ div.gallery:hover {
 }
 
 div.gallery img {
-    width: 100%;
-    height: auto;
+    width: 180px;
+    height: min(180px, min-content);
+    object-fit: contain;
+    image-rendering: optimizeSpeed;
 }
 
 div.desc {
