@@ -1,0 +1,35 @@
+@import "../style.css";
+
+/*Gallery*/
+div {
+    .gallery-container {
+        margin: auto;
+        padding: 1%;
+        overflow-x: hidden;
+        overflow-y: auto;
+        max-width: var(--max-width);
+    }
+
+    .gallery {
+        display: inline-block;
+        margin: 0;
+        padding: 0;
+        width: 180px;
+
+        :hover {
+            background-color: var(--bg-color-highlight);
+        }
+
+        img {
+            width: 180px;
+            max-height: 180px;
+            object-fit: contain;
+            image-rendering: optimizeSpeed;
+        }
+    }
+
+    .desc {
+        padding: 15px;
+        text-align: center;
+    }
+}
