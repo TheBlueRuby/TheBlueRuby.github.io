@@ -18,6 +18,7 @@ div.gallery:hover {
 }
 div.gallery img {
   width: 180px;
+  min-height: min-content;
   max-height: 180px;
   object-fit: contain;
 }
