@@ -119,18 +119,13 @@ a:hover {
     margin: auto;
     padding: 0;
     overflow: hidden;
+    overflow-x: auto;  
     background-color: var(--navbar-color);
     max-width: var(--max-width);
     max-height: 50px;
     justify-content: left;
     border-radius: 4px;
     
-}
-
-@media screen and (max-width: 900px) {
-    .navbar {
-        overflow-x: scroll;   
-    }
 }
 
 .custom-navbar {
