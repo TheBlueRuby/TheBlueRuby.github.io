@@ -2,7 +2,7 @@
 
 /*Gallery*/
 div {
-    .gallery-container {
+    &.gallery-container {
         margin: auto;
         padding: 1%;
         overflow-x: hidden;
@@ -10,13 +10,13 @@ div {
         max-width: var(--max-width);
     }
 
-    .gallery {
+    &.gallery {
         display: inline-block;
         margin: 0;
         padding: 0;
         width: 180px;
 
-        :hover {
+        &:hover {
             background-color: var(--bg-color-highlight);
         }
 
@@ -24,11 +24,10 @@ div {
             width: 180px;
             max-height: 180px;
             object-fit: contain;
-            image-rendering: optimizeSpeed;
         }
     }
 
-    .desc {
+    &.desc {
         padding: 15px;
         text-align: center;
     }

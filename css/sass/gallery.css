@@ -1,28 +1,27 @@
 @import "../style.css";
 /*Gallery*/
-div .gallery-container {
+div.gallery-container {
   margin: auto;
   padding: 1%;
   overflow-x: hidden;
   overflow-y: auto;
   max-width: var(--max-width);
 }
-div .gallery {
+div.gallery {
   display: inline-block;
   margin: 0;
   padding: 0;
   width: 180px;
 }
-div .gallery :hover {
+div.gallery:hover {
   background-color: var(--bg-color-highlight);
 }
-div .gallery img {
+div.gallery img {
   width: 180px;
   max-height: 180px;
   object-fit: contain;
-  image-rendering: optimizeSpeed;
 }
-div .desc {
+div.desc {
   padding: 15px;
   text-align: center;
 }
