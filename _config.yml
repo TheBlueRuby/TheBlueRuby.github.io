@@ -1,2 +1,6 @@
 exclude: ['./readme.md']
 exclude: ['*.scss']
+collections:
+  posts:
+    output: true
+    permalink: /:categories/:year/:month/:day/:title/

@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function (event) {
     var reader = new XMLHttpRequest() || new ActiveXObject('MSXML2.XMLHTTP');
-    var latestPost = 'posts/latest.md'
+    var latestPost = 'latest.md'
 
     function loadFile() {
         reader.open('get', latestPost, true);

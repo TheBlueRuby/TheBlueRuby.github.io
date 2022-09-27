@@ -1,2 +1,4 @@
 /.vscode
 *.map*
+/.jekyll-cache
+/_site

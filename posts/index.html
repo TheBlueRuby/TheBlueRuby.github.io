@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="/resources/favicon.png">
+    <title>TheBlueRuby - Posts</title>
+
+    <meta name="description" content="A small website by TheBlueRuby">
+
+    <meta content="TheBlueRuby's Github Page - Posts" property="og:title" />
+    <meta property="og:type" content="website">
+    <meta content="A small website by TheBlueRuby" property="og:description" />
+    <meta content="https://theblueruby.github.io/" property="og:url" />
+    <meta content="https://theblueruby.github.io/resources/banner.png" property="og:image" />
+    <meta content="#00BBFF" name="theme-color" />
+</head>
+
+<body>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script src="https://unpkg.com/showdown/dist/showdown.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/accordion.css">
+
+    <script src="/js/themeswitcher.js"></script>
+
+    <h1 class="title">Posts & Updates</h1>
+    <br>
+
+    <!--Dark Mode Button-->
+
+    <div class="darkmode-toggle form-check form-switch">
+        <input id="darkmode-toggler" class="darkmode-checkbox form-check-input" role="switch" type="checkbox" checked>
+        <label class="darkmode-label" for="darkmode-toggler">
+            Enable dark mode
+        </label>
+    </div>
+    <br>
+
+    <!--Navbar-->
+    <nav class="navbar navbar-expand">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/index.html">
+                <img src="/resources/favicon.png" width="45" height="45" alt="Go to Homepage">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="navbar-link" href="/index.html">Home</a></li>
+                    <li class="nav-item"><a class="navbar-link" href="/art">Art</a></li>
+                    <li class="nav-item"><a class="navbar-link" href="./">Posts</a></li>
+                    <li class="nav-item"><a class="navbar-link" href="/projects.html">Projects</a></li>
+                    <li class="nav-item"><a class="navbar-link" href="/aboutme.html">About Me</a></li>
+                    <li class="nav-item"><a class="navbar-link"
+                            href="https://github.com/TheBlueRuby/theblueruby.github.io/">Source</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <br>
+
+    <!--Content goes here!-->
+    <div id="latest-post" class="posts">
+        <br>
+        <p>TheBlueRuby Out!</p>
+    </div>
+
+    <br>
+    <div class="accordion" id="posts-page-accordion">
+        <div class="accordion-item">
+            <h1 class="accordion-header" id="accordion-heading-1">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#accordion-content-1" aria-expanded="false">
+                    Viewing Older Posts
+                </button>
+            </h1>
+            <div id="accordion-content-1" class="accordion-collapse collapse" aria-labelledby="accordion-heading-1"
+                data-bs-parent="#posts-page-accordion">
+                <div class="accordion-body">
+                    <p>To view older posts, add the post id to the end of this page's link (<a
+                            href="https://theblueruby.github.io/posts/">https://theblueruby.github.io/posts/</a>).</p>
+                    <p>Post IDs are formatted as YYYY/MM/DD/HH-MM</p>
+                    <p>Hours are in 24 hour time and are in the AEST timezone. (UTC+11 except sometimes UTC+10)</p>
+                    <p>For example, to view the post made on the 9th of September 2022 at 21:29 AEST you would go to:
+                    </p>
+                    <p><a
+                            href="https://theblueruby.github.io/posts/2022/09/09/21-29">https://theblueruby.github.io/posts/2022/09/09/21-29/</a>
+                    </p>
+                    <p>This will show the formatted markdown of the post.</p>
+                    <p>To view the raw markdown, you can view the <a
+                            href="http://github.com/theblueruby/theblueruby.github.io/tree/main/posts/_posts/">site's
+                            post source</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+
+    <script src="post-converter.js"></script>
+
+</body>
+
+</html>
