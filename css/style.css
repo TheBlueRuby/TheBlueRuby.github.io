@@ -167,7 +167,7 @@ a:hover {
 .posts {
     margin: auto;
     padding: 1.5%;
-    max-width: 75rem;
+    max-width: var(--max-width);
 
     border-style: solid;
     border-width: 1px;
