@@ -11,7 +11,7 @@
     --navbar-text-color: #fff;
     --navbar-hover-text-color: #000;
 
-    --max-width: 50rem;
+    --max-width: 90vw;
 }
 
 [data-theme="light"] {
@@ -45,13 +45,6 @@ html {
     min-width: 100vw;
     min-height: 100vh;
 }
-
-@media screen and (max-width: 900px) {
-    :root {
-        --max-width: 90vw;
-    }
-}
-
 
 body {
     color: var(--txt-color);
