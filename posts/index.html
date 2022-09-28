@@ -1,3 +1,5 @@
+---
+---
 <!DOCTYPE html>
 <html lang="en">
 
@@ -75,7 +77,7 @@
     </div>
 
     <br>
-    <div class="accordion" id="posts-page-accordion">
+    <div class="accordion" id="posts-page-accordions">
         <div class="accordion-item">
             <h1 class="accordion-header" id="accordion-heading-1">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
@@ -99,6 +101,30 @@
                     <p>To view the raw markdown, you can view the <a
                             href="http://github.com/theblueruby/theblueruby.github.io/tree/main/posts/_posts/">site's
                             post source</a></p>
+                    <p>Alternatively, you could choose a post from the dropdown below. Posts are listed newest to
+                        oldest.</p>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="accordion-item">
+            <h1 class="accordion-header" id="accordion-heading-2">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#accordion-content-2" aria-expanded="false">
+                    List of posts
+                </button>
+            </h1>
+            <div id="accordion-content-2" class="accordion-collapse collapse" aria-labelledby="accordion-heading-2"
+                data-bs-parent="#posts-page-accordion">
+                <div class="accordion-body">
+                    <p>Posts, listed from newest to oldest:</p>
+                    <ul>
+                        {% for post in site.posts %}
+                        <li>
+                            <a href="{{ post.url }}">{{ post.title }}</a> published on {{ post.date | date_to_long_string }}
+                        </li>
+                        {% endfor %}
+                    </ul>
                 </div>
             </div>
         </div>

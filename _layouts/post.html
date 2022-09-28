@@ -68,14 +68,37 @@
     </nav>
     <br>
 
-        <div class="posts">
-            {{content}}
-            <br>
-            <br>
-            <p>TheBlueRuby Out!</p>
-            <br>
-        </div>
+    <div class="posts">
+        {{content}}
+        <br>
+        <br>
+        <p>TheBlueRuby Out!</p>
+        <br>
+    </div>
+    <br>
 
+    <div class="accordion" id="post-page-accordion">
+        <div class="accordion-item">
+            <h1 class="accordion-header" id="accordion-heading-1">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#accordion-content-1" aria-expanded="false">
+                    List of posts
+                </button>
+            </h1>
+            <div id="accordion-content-1" class="accordion-collapse collapse" aria-labelledby="accordion-heading-1"
+                data-bs-parent="#posts-page-accordion">
+                <div class="accordion-body">
+                    <ul>
+                        {% for post in site.posts %}
+                          <li>
+                            <a href="{{ post.url }}">{{ post.title }}</a>
+                          </li>
+                        {% endfor %}
+                      </ul>
+                </div>
+            </div>
+        </div>
+    </div>
     <br>
 
 </body>
