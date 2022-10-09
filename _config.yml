@@ -1,6 +1,15 @@
+title: TheBlueRuby's Website
+description: A website I use to put random stuff on
+url: https://theblueruby.github.io/
+author: TheBlueRuby
+
 exclude: ['./readme.md', '*.scss']
+
 collections:
   posts:
     output: true
     permalink: /:categories/:year/:month/:day/:title/
+
 timezone: Australia/NSW
+
+plugins: [jekyll-sitemap, jekyll-feed, jekyll-seo-tag]
