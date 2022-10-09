@@ -1,5 +1,4 @@
-exclude: ['./readme.md']
-exclude: ['*.scss']
+exclude: ['./readme.md', '*.scss']
 collections:
   posts:
     output: true
