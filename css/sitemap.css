@@ -1,0 +1,23 @@
+url {
+    display: list-item;
+    margin-left: 1rem;
+}
+
+
+lastmod {
+    display: list-item;
+    margin-left: 2rem;
+    list-style-type: circle;
+}
+
+changefreq {
+    display: list-item;
+    margin-left: 2rem;
+    list-style-type: circle;
+}
+
+priority {
+    display: list-item;
+    margin-left: 2rem;
+    list-style-type: circle;
+}
