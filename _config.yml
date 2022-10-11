@@ -12,4 +12,4 @@ collections:
 
 timezone: Australia/NSW
 
-plugins: [jekyll-sitemap, jekyll-feed, jekyll-seo-tag]
+plugins: [jekyll-sitemap, jekyll-seo-tag]

@@ -1,0 +1,46 @@
+---
+layout: null
+---
+
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet href="/css/feed.css" type="text/css"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" />
+    <link href="http://localhost:4000/" rel="alternate" type="text/html" />
+    <updated>2022-10-11T07:04:08+11:00</updated>
+    <br />
+    <id>http://localhost:4000/feed.xml</id>
+    <br />
+    <title type="html">TheBlueRuby’s Website</title>
+    <br />
+    <subtitle>A website I use to put random stuff on</subtitle>
+    <br />
+    <author>
+        <name>TheBlueRuby</name>
+    </author>
+    
+    {% for post in site.posts %}
+        <entry>
+            <title type="html">{{post.title | xml_escape}}</title>
+            <link href="{{post.url}}" rel="alternate" type="text/html" title="{{post.title | xml_escape}}" />
+            <published>{{post.date}}</published>
+            <br />
+            <updated>{{post.date}}</updated>
+            <br />
+            <id>{{post.url}}</id>
+            <br />
+            <content type="html" xml:base="{{post.url}}">
+                {{post.content | xml_escape}}
+            </content>
+            <br />
+            <author>
+                <name>TheBlueRuby</name>
+            </author>
+            <br />
+            <category term="posts" />
+            <summary type="html">
+                <![CDATA[{{post.title | xml_escape}} {{post.date | date_to_long_string}}]]>
+            </summary>
+        </entry>
+        {% endfor %}
+</feed>

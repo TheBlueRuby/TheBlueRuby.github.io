@@ -1,0 +1,14 @@
+br {
+    display:block;
+}
+
+entry {
+    display: list-item;
+    margin-left: 1rem;
+    list-style-type: disc;
+}
+content {
+    display: list-item;
+    margin-left: 2rem;
+    list-style-type: circle;
+}
