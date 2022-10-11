@@ -21,8 +21,8 @@ layout: null
     
     {% for post in site.posts %}
         <entry>
-            <title type="html">{{post.title | xml_escape}}</title>
-            <link href="{{post.url}}" rel="alternate" type="text/html" title="{{post.title | xml_escape}}" />
+            <title type="html">{{post.title | escape_once}}</title>
+            <link href="{{post.url}}" rel="alternate" type="text/html" title="{{post.title | escape_once}}" />
             <published>{{post.date}}</published>
             <br />
             <updated>{{post.date}}</updated>
@@ -30,7 +30,7 @@ layout: null
             <id>{{post.url}}</id>
             <br />
             <content type="html" xml:base="{{post.url}}">
-                {{post.content | xml_escape}}
+                {{post.content | escape_once}}
             </content>
             <br />
             <author>
@@ -39,7 +39,7 @@ layout: null
             <br />
             <category term="posts" />
             <summary type="html">
-                <![CDATA[{{post.title | xml_escape}} {{post.date | date_to_long_string}}]]>
+                <![CDATA[{{post.title | escape_once}} {{post.date | date_to_long_string}}]]>
             </summary>
         </entry>
         {% endfor %}
