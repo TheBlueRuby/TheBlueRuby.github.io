@@ -1,7 +1,5 @@
 ---
-layout: null
 ---
-
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-stylesheet href="/css/feed.css" type="text/css"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
@@ -13,7 +11,7 @@ layout: null
     <br />
     <title type="html">TheBlueRuby’s Website</title>
     <br />
-    <subtitle>A website I use to put random stuff on</subtitle>
+    <subtitle>{{site.description}}</subtitle>
     <br />
     <author>
         <name>TheBlueRuby</name>
