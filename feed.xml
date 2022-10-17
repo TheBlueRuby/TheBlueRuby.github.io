@@ -5,11 +5,11 @@ layout: null
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-stylesheet href="/css/feed.css" type="text/css"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <link href="{{site.url}}/feed.xml" rel="self" type="application/atom+xml" />
-    <link href="{{site.url}}/" rel="alternate" type="text/html" />
+    <link href="{{site.url}}feed.xml" rel="self" type="application/atom+xml" />
+    <link href="{{site.url}}" rel="alternate" type="text/html" />
     <updated>{{site.time | date_to_xmlschema}}</updated>
     <br />
-    <id>{{site.url}}/feed.xml</id>
+    <id>{{site.url}}feed.xml</id>
     <br />
     <title type="html">TheBlueRuby’s Website</title>
     <br />
@@ -22,15 +22,15 @@ layout: null
     {% for post in site.posts %}
         <entry>
             <title type="html">{{post.title | escape_once}}</title>
-            <link href="{{post.url}}"                           type="text/html" title="{{post.title | escape_once}}" />
-            <link href="{{post.url}}index.html" rel="alternate" type="text/html" title="{{post.title | escape_once}}" />
+            <link href="theblueruby.github.io{{post.url}}"                           type="text/html" title="{{post.title | escape_once}}" />
+            <link href="theblueruby.github.io{{post.url}}index.html" rel="alternate" type="text/html" title="{{post.title | escape_once}}" />
             <published>{{post.date | date_to_xmlschema}}</published>
             <br />
             <updated>{{post.date | date_to_xmlschema}}</updated>
             <br />
-            <id>{{post.url}}</id>
+            <id>theblueruby.github.io{{post.url}}</id>
             <br />
-            <content type="html" xml:base="{{post.url}}">
+            <content type="html" xml:base="theblueruby.github.io{{post.url}}">
                 {{post.content | escape_once}}
             </content>
             <br />
