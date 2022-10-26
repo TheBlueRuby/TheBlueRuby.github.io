@@ -1,130 +1,60 @@
-<!DOCTYPE html>
-<html lang="en">
+---
+layout: default
+title: Art
+---
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" href="resources/favicon.png">
-    <title>TheBlueRuby - Art</title>
+<link rel="stylesheet" href="/css/sass/gallery.css">
 
-    <meta name="description" content="Art by TheBlueRuby">
+<!--Image gallery-->
 
-    <meta content="TheBlueRuby's Github Page - Art" property="og:title" />
-    <meta property="og:type" content="website">
-    <meta content="A small website by TheBlueRuby" property="og:description" />
-    <meta content="https://theblueruby.github.io/" property="og:url" />
-    <meta content="https://theblueruby.github.io/resources/banner.png" property="og:image" />
-    <meta content="#00BBFF" name="theme-color" />
-</head>
-
-<body>
-    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
-
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/sass/gallery.css">
-
-    <script src="/js/themeswitcher.js"></script>
-
-    <h1 class="title">TheBlueRuby's Art</h1>
-    <br>
-
-    <!--Dark Mode Button-->
-
-    <div class="darkmode-toggle form-check form-switch">
-        <input id="darkmode-toggler" class="darkmode-checkbox form-check-input" role="switch" type="checkbox" checked>
-        <label class="darkmode-label" for="darkmode-toggler">
-            Enable dark mode
-        </label>
+<div class="gallery-container">
+    <div class="gallery">
+        <a target="_blank" href="iconv2.png">
+            <img src="iconv2.png" alt="My Icon" width="180" height="180" />
+        </a>
+        <div class="desc">3D render of my icon</div>
     </div>
-    <br>
 
-    <!--Navbar-->
-    <nav class="navbar navbar-expand">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="/index.html">
-                <img src="/resources/favicon.png" width="45" height="45" alt="Go to Homepage">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <ul class="navbar-nav">
-                    <li class="nav-item"><a class="navbar-link" href="/index.html">Home</a></li>
-                    <li class="nav-item"><a class="navbar-link" href="./">Art</a></li>
-                    <li class="nav-item"><a class="navbar-link" href="/posts/">Posts</a></li>
-                    <li class="nav-item"><a class="navbar-link" href="/projects.html">Projects</a></li>
-                    <li class="nav-item"><a class="navbar-link" href="/aboutme.html">About Me</a></li>
-                    <li class="nav-item"><a class="navbar-link"
-                            href="https://github.com/TheBlueRuby/theblueruby.github.io/">Source</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <br>
-
-    <!--Image gallery-->
-
-    <div class="gallery-container">
-        <div class="gallery">
-            <a target="_blank" href="iconv2.png">
-                <img src="iconv2.png" alt="My Icon" width="180" height="180">
-            </a>
-            <div class="desc">3D render of my icon</div>
-        </div>
-
-        <div class="gallery">
-            <a target="_blank" href="miteprodlogo.png">
-                <img src="miteprodlogo.png" alt="Logo for Mite Productions" width="180" height="180">
-            </a>
-            <div class="desc">A logo I made for Mite Productions</div>
-        </div>
-
-        <div class="gallery">
-            <a target="_blank" href="ultramite-blue8-early.png">
-                <img src="ultramite-blue8-early.png" alt="Ultramite Early Render" height="180">
-            </a>
-            <div class="desc">Early render of my character Ultramite</div>
-        </div>
-
-        <div class="gallery">
-            <a target="_blank" href="ultramite-blue8.png">
-                <img src="ultramite-blue8.png" alt="More Final Ultramite Render" height="180"
-                    srcset="ultramite-blue8-1080p.png">
-            </a>
-            <div class="desc">More final render of Ultramite</div>
-        </div>
-
-        <div class="gallery">
-            <a target="_blank" href="UltramiteBlink.gif">
-                <img src="UltramiteBlink.gif" alt="Ultramite Blinking Disapprovingly" width="180" height="180">
-            </a>
-            <div class="desc">Ultramite blinking</div>
-        </div>
-
-        <div class="gallery">
-            <a target="_blank" href="rat.png">
-                <img src="rat.png" alt="a rat" style="object-fit: fill;">
-            </a>
-            <div class="desc">37th rat from 37 Rats</div>
-        </div>
-
-        <div class="gallery">
-            <a target="_blank"
-                href="zaethar-channel-banner.png">
-                <img src="zaethar-channel-banner.png"
-                    alt="cursed image" style="object-fit: fill;">
-            </a>
-            <div class="desc">YT channel banner I made for a friend</div>
-        </div>
-
+    <div class="gallery">
+        <a target="_blank" href="miteprodlogo.png">
+            <img src="miteprodlogo.png" alt="Logo for Mite Productions" width="180" height="180" />
+        </a>
+        <div class="desc">A logo I made for Mite Productions</div>
     </div>
-    <br>
 
-</body>
+    <div class="gallery">
+        <a target="_blank" href="ultramite-blue8-early.png">
+            <img src="ultramite-blue8-early.png" alt="Ultramite Early Render" height="180" />
+        </a>
+        <div class="desc">Early render of my character Ultramite</div>
+    </div>
 
-</html>
+    <div class="gallery">
+        <a target="_blank" href="ultramite-blue8.png">
+            <img src="ultramite-blue8.png" alt="More Final Ultramite Render" height="180" srcset="ultramite-blue8-1080p.png" />
+        </a>
+        <div class="desc">More final render of Ultramite</div>
+    </div>
+
+    <div class="gallery">
+        <a target="_blank" href="UltramiteBlink.gif">
+            <img src="UltramiteBlink.gif" alt="Ultramite Blinking Disapprovingly" width="180" height="180" />
+        </a>
+        <div class="desc">Ultramite blinking</div>
+    </div>
+
+    <div class="gallery">
+        <a target="_blank" href="rat.png">
+            <img src="rat.png" alt="a rat" style="object-fit: fill" />
+        </a>
+        <div class="desc">37th rat from 37 Rats</div>
+    </div>
+
+    <div class="gallery">
+        <a target="_blank" href="zaethar-channel-banner.png">
+            <img src="zaethar-channel-banner.png" alt="cursed image" style="object-fit: fill" />
+        </a>
+        <div class="desc">YT channel banner I made for a friend</div>
+    </div>
+</div>
+<br />
