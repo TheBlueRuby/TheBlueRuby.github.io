@@ -1,0 +1,36 @@
+---
+layout: old-browsers
+title: Posts & Updates
+permalink: /old-browsers/posts/
+---
+<div id="latest-post" class="posts">
+    {{site.posts.first.content}}
+    <br />
+    <p>TheBlueRuby Out!</p>
+</div>
+
+<br />
+<div class="accordion" id="posts-page-accordions">
+    <div class="accordion-item">
+        <h1 class="accordion-header" id="accordion-heading-1">Viewing Older Posts</h1>
+        <p>To view older posts, add the post id to the end of this page's link (<a href="https://theblueruby.github.io/posts/">https://theblueruby.github.io/posts/</a>).</p>
+        <p>Post IDs are formatted as YYYY/MM/DD/HH-MM</p>
+        <p>Hours are in 24 hour time and are in the AEST timezone. (UTC+11 except sometimes UTC+10)</p>
+        <p>For example, to view the post made on the 9th of September 2022 at 21:29 AEST you would go to:</p>
+        <p><a href="https://theblueruby.github.io/posts/2022/09/09/21-29">https://theblueruby.github.io/posts/2022/09/09/21-29/</a></p>
+        <p>This will show the formatted markdown of the post.</p>
+        <p>To view the raw markdown, you can view the <a href="http://github.com/theblueruby/theblueruby.github.io/tree/main/posts/_posts/">site's post source</a></p>
+        <p>Alternatively, you could choose a post from the dropdown below. Posts are listed newest to oldest.</p>
+    </div>
+    <br />
+    <div class="accordion-item">
+        <h1 class="accordion-header" id="accordion-heading-2">List of posts</h1>
+        <p>Posts, listed from newest to oldest:</p>
+        <ul>
+            {% for post in site.posts %}
+            <li><a href="{{ post.url }}">{{ post.title }}</a> published on {{ post.date | date_to_long_string }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+</div>
+<br />

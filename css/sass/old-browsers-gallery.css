@@ -1,0 +1,40 @@
+/*Gallery*/
+div.gallery-container {
+  display: inline-block;
+  flex-basis: 90vw;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin: auto;
+  padding: 1%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  max-width: 90vw;
+  box-sizing: content-box;
+}
+div.gallery {
+  display: inline-block;
+  margin: 5px;
+  padding: 5px;
+  min-height: 180px;
+  width: 180px;
+  height: 270px;
+}
+div.gallery:hover {
+  background-color: #246;
+  border-radius: 10px;
+}
+div.gallery img {
+  border-radius: 10px;
+  object-fit: contain;
+  width: 320px;
+  height: 180px;
+}
+div.desc {
+  margin: auto;
+  padding: 15px;
+  text-align: center;
+  max-width: 180px;
+  height: 75px;
+}
+
+/*# sourceMappingURL=gallery.css.map */
