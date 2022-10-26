@@ -107,7 +107,16 @@ a:hover {
 
 /*Navbar*/
 
+.is-sticking {
+    max-width: 100vw !important;
+    border-radius: 0px !important;
+    scale: 1.11 1.11;
+    z-index: 1000;
+}
+
 .navbar {
+    position: sticky;
+    position: -webkit-sticky;
     white-space: nowrap;
     margin: auto;
     padding: 0;
@@ -118,7 +127,8 @@ a:hover {
     max-height: 50px;
     justify-content: left;
     border-radius: 4px;
-    
+    top: -1px;
+    transition: all 100ms ease-in-out;
 }
 
 .custom-navbar {
