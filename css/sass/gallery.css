@@ -22,7 +22,7 @@ div.gallery:hover {
   background-color: var(--bg-color-highlight);
   border-radius: 10px;
 }
-div.gallery img {
+div.gallery img, div.gallery video {
   max-height: 180px;
   border-radius: 10px;
   object-fit: contain;
