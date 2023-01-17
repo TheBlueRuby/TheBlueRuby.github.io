@@ -3,13 +3,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-stylesheet href="/css/feed.css" type="text/css"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <link href="{{site.url}}feed.xml" rel="self" type="application/atom+xml" />
-    <link href="{{site.url}}" rel="alternate" type="text/html" />
+    <link href="http://theblueruby.github.io/feed.xml" rel="self" type="application/atom+xml" />
+    <link href="http://theblueruby.github.io/" rel="alternate" type="text/html" />
     <updated>{{site.time | date_to_xmlschema}}</updated>
     <br />
     <id>{{site.url}}feed.xml</id>
     <br />
-    <title type="html">TheBlueRuby’s Website</title>
+    <title type="html">TheBlueRuby's Website</title>
     <br />
     <subtitle>{{site.description}}</subtitle>
     <br />
