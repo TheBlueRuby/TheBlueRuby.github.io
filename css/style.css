@@ -6,10 +6,10 @@
     --link-color: #0b0;
     --link-color-hover: #090;
 
-    --navbar-color: #00b;
-    --navbar-hover-color: #0ff;
+    --navbar-color: #03a;
+    --navbar-hover-color: #0af;
     --navbar-text-color: #fff;
-    --navbar-hover-text-color: #000;
+    --navbar-hover-text-color: #03a;
 
     --max-width: 90vw;
 }
